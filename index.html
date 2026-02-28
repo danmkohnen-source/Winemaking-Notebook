@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Winemaking Notebook</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ── Navigation bar ── -->
+
+  <nav id="nav">
+    <div class="nav-inner">
+      <button class="nav-back" id="nav-back" onclick="WN.ui.goBack()" aria-label="Back">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M10 3L5 8L10 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <span class="nav-title" id="nav-title">Winemaking Notebook</span>
+      <button class="nav-expert" id="nav-expert" onclick="WN.ui.toggleExpertMode()" title="Toggle Expert Mode">E</button>
+    </div>
+    <div class="nav-progress" id="nav-progress"></div>
+  </nav>
+
+  <!-- ── Main screen container ── -->
+
+  <main id="screen"></main>
+
+  <!-- ── Toast notification ── -->
+
+  <div id="toast" class="toast" aria-live="polite"></div>
+
+  <script src="js/app.js"></script>
+
+</body>
+</html>
