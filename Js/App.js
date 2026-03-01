@@ -1,3 +1,7 @@
+alert("JS loaded");
+
+
+
 /* ═══════════════════════════════════════════════════════════════════
 WINEMAKING NOTEBOOK — app.js
 Version 1: Gap Analysis + Routing. No trials. No learning loop.
