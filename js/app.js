@@ -1,3 +1,7 @@
+window.WN = window.WN || {};
+const WN = window.WN; // optional convenience alias
+
+
 alert("JS loaded");
 
 
@@ -1707,4 +1711,15 @@ if (ep) ep.classList.add(‘active’);
 }
 
 WN.ui.renderDashboard();
+});
+
+
+
+
+
+
+
+
+window.addEventListener("DOMContentLoaded", () => {
+  if (WN.ui && typeof WN.ui.init === "function") WN.ui.init();
 });
